@@ -1,6 +1,5 @@
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'vim-scripts/YankRing.vim'
-Plug 'pangloss/vim-javascript'
 Plug 'altercation/vim-colors-solarized'
 Plug 'scrooloose/nerdcommenter'
 Plug 'jiangmiao/auto-pairs'
@@ -10,6 +9,7 @@ Plug 'justinmk/vim-sneak'
 Plug 'tpope/vim-repeat'
 Plug 'neomake/neomake'
 Plug 'terryma/vim-expand-region'
+Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx', { 'for': 'javascript.jsx' }
 Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }

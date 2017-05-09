@@ -1,6 +1,10 @@
+"javcascript syntax
+let g:javascript_opfirst = 1
+
 "neomake
 let g:neomake_javascript_enabled_makers = ['eslint']
 autocmd! BufWritePost * Neomake
+
 "neosnippet
 let g:neosnippet#disable_runtime_snippets = {
       \   '_' : 1,
