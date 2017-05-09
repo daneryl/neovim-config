@@ -101,7 +101,7 @@ call denite#custom#var('menu', 'menus', s:menus)
 nnoremap <C-f> :<C-u>Denite file_rec<CR>
 nnoremap <C-t> :<C-u>Denite file_rec -default-action=tabopen<CR>
 nnoremap <C-g> :<C-u>Denite grep -auto-preview -mode=normal<CR>
-nnoremap <C-m> :<C-u>Denite menu:config<CR>
+nnoremap <leader>m :<C-u>Denite menu:config<CR>
 noremap <C-c> :<C-u>Denite menu:commands<CR>
 
 "expand region

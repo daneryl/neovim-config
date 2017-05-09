@@ -4,7 +4,7 @@ vnoremap <C-S> <C-C>:update<CR>
 inoremap <C-S> <C-O>:update<CR><ESC>
 
 "Deactivate hl from las search
-nnoremap <CR> :noh<CR><CR>CR
+nnoremap <CR> :noh<CR><CR>
 
 let mapleader = ","
 nmap <leader>q :q<CR>
