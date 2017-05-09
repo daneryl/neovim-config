@@ -90,6 +90,7 @@ let s:menus.config.file_candidates = [
       \ ['init.vim', '~/.config/nvim/init.vim'],
       \ ['plugins.vim', '~/.config/nvim/plugins.vim'],
       \ ['binds.vim', '~/.config/nvim/binds.vim'],
+      \ ['javascript.vim', '~/.config/nvim/ftplugin/javascript.vim']
       \ ]
 let s:menus.commands = {
       \ 'description': 'useful commands'
