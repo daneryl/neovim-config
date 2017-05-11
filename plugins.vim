@@ -1,3 +1,13 @@
+"lightline
+let g:lightline = {
+      \ 'component_function': {
+      \   'filename': 'LightLineFilename'
+      \ }
+      \ }
+function! LightLineFilename()
+  return expand('%')
+endfunction
+
 "javcascript syntax
 let g:javascript_opfirst = 1
 
