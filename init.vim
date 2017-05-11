@@ -22,6 +22,7 @@ set ofu=syntaxcomplete#Complete
 set exrc  " enable per-directory .vimrc files
 set secure " disable unsafe commands in local .vimrc files
 set number
+set lazyredraw
 set wrap!
 set expandtab
 set autoindent
