@@ -14,3 +14,24 @@ snippet log
 abbr console.log
 options word
   console.log(${1:args});
+
+snippet desc
+abbr describe
+options word
+  describe('${1:when}', () => {
+    ${2:its}
+  });
+
+snippet before
+abbr beforeEach
+options word
+  beforeEach((${1:done}) => {
+    ${3:config...}
+  });
+
+snippet it
+abbr it
+options word
+  it('${1:should}', (${2:done}) => {
+    ${3:expects...}
+  });
