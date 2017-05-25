@@ -29,9 +29,24 @@ options word
     ${3:config...}
   });
 
+snippet exp
+abbr expect
+options word
+  expect(${1:result}).${2:toBe}(${3:expected});
+
 snippet it
 abbr it
 options word
   it('${1:should}', (${2:done}) => {
     ${3:expects...}
   });
+
+snippet spy
+abbr spyOn
+options word
+  spyOn(${1:object}, '${2:method}')${3:;}
+
+snippet returnV
+abbr and.returnValue
+options word
+  .and.returnValue(${1:value});

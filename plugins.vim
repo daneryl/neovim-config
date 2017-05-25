@@ -8,6 +8,10 @@ function! LightLineFilename()
   return expand('%')
 endfunction
 
+"yankstack
+nmap <C-p> <Plug>yankstack_substitute_older_paste
+nmap <C-P> <Plug>yankstack_substitute_newer_paste
+
 "javcascript syntax
 let g:javascript_opfirst = 1
 
@@ -119,6 +123,14 @@ nnoremap <C-g> :<C-u>Denite grep -auto-preview -mode=normal<CR>
 nnoremap <leader>g :<C-u>DeniteCursorWord file_rec -mode=normal<CR>
 nnoremap <leader>m :<C-u>Denite menu:config<CR>
 noremap <C-c> :<C-u>Denite menu:commands<CR>
+noremap <leader>s :<C-u>Denite file_rec -input=`expand('%:r')`.spec -mode=normal -default-action=tabopen -immediately<CR>
+
+call denite#custom#map(
+		      \ 'normal',
+		      \ '<C-a>',
+		      \ '<denite:toggle_select_all>',
+		      \ 'noremap'
+		      \)
 
 "expand region
 map K <Plug>(expand_region_expand)

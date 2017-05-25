@@ -1,6 +1,7 @@
 call plug#begin('~/.local/share/nvim/plugged')
-Plug 'vim-scripts/YankRing.vim'
 Plug 'altercation/vim-colors-solarized'
+Plug 'maxbrunsfeld/vim-yankstack'
+Plug 'svermeulen/vim-easyclip'
 Plug 'scrooloose/nerdcommenter'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
@@ -11,6 +12,7 @@ Plug 'neomake/neomake'
 Plug 'terryma/vim-expand-region'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx', { 'for': 'javascript.jsx' }
+"Plug 'Shougo/neoyank.vim'
 Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'Shougo/neosnippet.vim'
@@ -22,7 +24,7 @@ set ofu=syntaxcomplete#Complete
 set exrc  " enable per-directory .vimrc files
 set secure " disable unsafe commands in local .vimrc files
 set number
-set lazyredraw
+"set lazyredraw
 set wrap!
 set expandtab
 set autoindent
@@ -37,7 +39,9 @@ set backspace=indent,eol,start
 set hlsearch
 set incsearch
 set ic " case insensitive search
-set clipboard=unnamed
+set mouse=
+"set clipboard=unnamed
+"set clipboard=unnamed,unnamedplus
 
 syntax enable
 set background=dark
