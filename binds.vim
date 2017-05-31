@@ -5,6 +5,7 @@ inoremap <C-S> <C-O>:update<CR><ESC>
 
 "Deactivate hl from las search
 nnoremap <SPACE> :noh<CR>
+inoremap <leader><leader> <ESC>
 
 noremap <C-j> 5j
 noremap <C-k> 5k
