@@ -21,6 +21,7 @@ let g:javascript_opfirst = 1
 "neomake
 let g:neomake_javascript_enabled_makers = ['eslint']
 autocmd! BufWritePost * Neomake
+nnoremap <leader>ne :ll<CR>
 
 "neosnippet
 let g:neosnippet#disable_runtime_snippets = {

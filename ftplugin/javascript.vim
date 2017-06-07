@@ -9,3 +9,15 @@ function! JSAddDonetoJasmineIT()
 endfunction
 
 nnoremap <leader>it :call JSAddDonetoJasmineIT()<CR>
+
+function! JSAddFitToJasmineIt()
+    normal ?it('if
+endfunction
+
+nnoremap <leader>if :call JSAddFitToJasmineIt()<CR>
+
+function! JSRemoveFitToJasmineIt()
+  normal ?fit(?€kb'x
+endfunction
+
+nnoremap <leader>iF :call JSRemoveFitToJasmineIt()<CR>
