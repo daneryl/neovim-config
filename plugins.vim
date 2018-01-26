@@ -18,11 +18,10 @@ nmap <C-P> <Plug>yankstack_substitute_newer_paste
 "javcascript syntax
 let g:javascript_opfirst = 1
 
-"neomake
-let g:neomake_javascript_enabled_makers = ['eslint']
-autocmd! BufWritePost * Neomake
-nnoremap <leader>ne :ll<CR>
-
+"ale
+let g:ale_change_sign_column_color = 1
+let g:ale_sign_error = '💩'
+let g:ale_sign_warning = '❗️'
 "neosnippet
 let g:neosnippet#disable_runtime_snippets = {
       \   '_' : 1,

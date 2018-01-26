@@ -3,7 +3,7 @@ noremap <C-S> :update<CR>
 vnoremap <C-S> <C-C>:update<CR>
 inoremap <C-S> <C-O>:update<CR><ESC>
 
-"Deactivate hl from las search
+"Deactivate hl from last search
 nnoremap <SPACE> :noh<CR>
 inoremap <leader><leader> <ESC>
 
@@ -20,3 +20,6 @@ nmap <leader>b :bufdo %s#..#..#gec \| update
 vnoremap <C-y> "*y
 "paste from system clipbard
 noremap <leader>p "*p
+
+"go to next error
+nnoremap <leader>ne :ll<CR>

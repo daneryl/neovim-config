@@ -7,7 +7,8 @@ Plug 'tpope/vim-surround'
 Plug 'itchyny/lightline.vim'
 Plug 'justinmk/vim-sneak'
 Plug 'tpope/vim-repeat'
-Plug 'neomake/neomake'
+Plug 'w0rp/ale'
+"Plug 'neomake/neomake'
 Plug 'terryma/vim-expand-region'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx', { 'for': 'javascript.jsx' }
@@ -15,6 +16,7 @@ Plug 'mxw/vim-jsx', { 'for': 'javascript.jsx' }
 Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'Shougo/neosnippet.vim'
+Plug 'vim-scripts/Rename2'
 call plug#end()
 
 filetype plugin on
@@ -48,6 +50,9 @@ let g:solarized_visibility = "high"
 let g:solarized_contrast = "high"
 let g:solarized_termcolors=256
 colorscheme solarized
+
+let g:python2_host_prog = '/usr/local/bin/python'
+let g:python3_host_prog = '/usr/local/bin/python3'
 
 source $HOME/.config/nvim/binds.vim
 source $HOME/.config/nvim/plugins.vim

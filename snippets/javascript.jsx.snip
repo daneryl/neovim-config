@@ -60,3 +60,32 @@ snippet stringify
 abbr JSON.stringify
 options word
   JSON.stringify(${1:variable}, null, ' ')
+
+snippet react redux class
+abbr reactredux
+options word
+  import PropTypes from 'prop-types';
+  import React, {Component} from 'react';
+  import {connect} from 'react-redux';
+  import {bindActionCreators} from 'redux';
+
+  class ${1:className} extends Component {
+
+    render() {
+      return <div/>;
+    }
+  }
+
+  ${1:className}.propTypes = {
+  };
+
+  export function mapStateToProps() {
+    return {
+    };
+  }
+
+  function mapDispatchToProps(dispatch) {
+    return bindActionCreators({}, dispatch);
+  }
+
+  export default connect(mapStateToProps, mapDispatchToProps)(${1:className});
