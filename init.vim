@@ -1,7 +1,8 @@
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'altercation/vim-colors-solarized'
-Plug 'maxbrunsfeld/vim-yankstack'
+"Plug 'maxbrunsfeld/vim-yankstack'
 Plug 'scrooloose/nerdcommenter'
+Plug 'vim-scripts/YankRing.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
 Plug 'itchyny/lightline.vim'

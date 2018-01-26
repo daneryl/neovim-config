@@ -8,13 +8,6 @@ function! LightLineFilename()
   return expand('%')
 endfunction
 
-"yankstack
-"
-"call yankstack#setup()
-"let g:yankstack_yank_keys = ['y', 'd'];
-nmap <C-p> <Plug>yankstack_substitute_older_paste
-nmap <C-P> <Plug>yankstack_substitute_newer_paste
-
 "javcascript syntax
 let g:javascript_opfirst = 1
 
