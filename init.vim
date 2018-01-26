@@ -8,7 +8,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'justinmk/vim-sneak'
 Plug 'tpope/vim-repeat'
 Plug 'w0rp/ale'
-"Plug 'neomake/neomake'
+Plug 'sbdchd/neoformat'
 Plug 'terryma/vim-expand-region'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx', { 'for': 'javascript.jsx' }
