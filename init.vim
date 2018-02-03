@@ -19,6 +19,9 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'Shougo/neosnippet.vim'
 Plug 'vim-scripts/Rename2'
 Plug 'Galooshi/vim-import-js', { 'do': 'npm install -g import-js' }
+
+Plug 'mbbill/undotree', { 'on': 'UndotreeToggle' }
+
 call plug#end()
 
 filetype plugin on
