@@ -21,3 +21,29 @@ function! JSRemoveFitToJasmineIt()
 endfunction
 
 nnoremap <leader>iF :call JSRemoveFitToJasmineIt()<CR>
+
+function! TestCurrentFile()
+  if bufwinnr('JEST') > 0
+    :only
+    return
+  endif
+  :vsp | e term://jest --watch %:r
+  :file 'JEST'
+  :wincmd p
+  :vertical resize +25
+endfunction
+nnoremap <leader>t :call TestCurrentFile()<CR>
+
+function! TestOnlyChanges()
+  if bufwinnr('JEST') > 0
+    :only
+    return
+  endif
+  :vsp | e term://jest --watch
+  :file 'JEST'
+  :wincmd p
+  :vertical resize +25
+endfunction
+nnoremap <leader>T :call TestOnlyChanges()<CR>
+
+vnoremap <leader>b :call RangeJsBeautify()<CR>

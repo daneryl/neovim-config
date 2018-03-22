@@ -13,14 +13,16 @@ Plug 'sbdchd/neoformat'
 Plug 'terryma/vim-expand-region'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx', { 'for': 'javascript.jsx' }
-"Plug 'Shougo/neoyank.vim'
+Plug 'ruanyl/vim-fixmyjs', { 'for': 'javascript.jsx' }
 Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'Shougo/neosnippet.vim'
 Plug 'vim-scripts/Rename2'
 Plug 'Galooshi/vim-import-js', { 'do': 'npm install -g import-js' }
+Plug 'maksimr/vim-jsbeautify', { 'do': 'npm install -g js-beautify' }
 
 Plug 'mbbill/undotree', { 'on': 'UndotreeToggle' }
+Plug 'mattn/emmet-vim'
 
 call plug#end()
 
@@ -46,6 +48,7 @@ set hlsearch
 set incsearch
 set ic " case insensitive search
 set mouse=
+set splitright
 "set clipboard=unnamed
 "set clipboard=unnamed,unnamedplus
 

@@ -15,6 +15,9 @@ let g:javascript_opfirst = 1
 let g:ale_change_sign_column_color = 1
 let g:ale_sign_error = '💩'
 let g:ale_sign_warning = '❗️'
+let g:ale_fixers = {
+\   'javascript': ['eslint'],
+\}
 "neosnippet
 let g:neosnippet#disable_runtime_snippets = {
       \   '_' : 1,
@@ -114,6 +117,7 @@ let s:menus.commands.command_candidates = [
 call denite#custom#var('menu', 'menus', s:menus)
 
 nnoremap <C-f> :<C-u>Denite file_rec<CR>
+nnoremap <C-b> :<C-u>Denite buffer<CR>
 nnoremap <C-t> :<C-u>Denite file_rec -default-action=tabopen<CR>
 nnoremap <C-g> :<C-u>Denite grep -auto-preview -mode=normal<CR>
 nnoremap <leader>g :<C-u>DeniteCursorWord file_rec -mode=normal<CR>
