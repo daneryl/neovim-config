@@ -17,9 +17,9 @@ nmap <leader>b :bufdo %s#..#..#gec \| update
 "nmap <leader>f <S-v>/{<cr>%
 "
 "copy to system clipboard (osx)
-"vnoremap <C-y> "*y
+vnoremap <C-y> "*y
 "paste from system clipbard
-"noremap <leader>p "*p
+noremap <leader>p "*p
 
 "go to next error
 nnoremap <leader>ne :ll<CR>

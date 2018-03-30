@@ -49,7 +49,7 @@ set incsearch
 set ic " case insensitive search
 set mouse=
 set splitright
-set clipboard=unnamed
+"set clipboard=unnamed
 "set clipboard=unnamed,unnamedplus
 
 syntax enable
