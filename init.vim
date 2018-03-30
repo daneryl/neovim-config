@@ -1,5 +1,6 @@
 call plug#begin('~/.local/share/nvim/plugged')
-Plug 'chriskempson/base16-vim'
+"Plug 'chriskempson/base16-vim'
+Plug 'rakr/vim-one'
 Plug 'scrooloose/nerdcommenter'
 Plug 'vim-scripts/YankRing.vim'
 Plug 'jiangmiao/auto-pairs'
@@ -54,10 +55,7 @@ set clipboard=unnamed
 syntax enable
 set termguicolors
 set background=dark
-"let g:solarized_visibility = "normal"
-"let g:solarized_contrast = "normal"
-"let g:solarized_termcolors=256
-colorscheme base16-default-dark
+colorscheme one
 
 let g:python2_host_prog = '/usr/local/bin/python'
 let g:python3_host_prog = '/usr/local/bin/python3'
