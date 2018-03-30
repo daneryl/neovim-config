@@ -1,6 +1,5 @@
 call plug#begin('~/.local/share/nvim/plugged')
-Plug 'altercation/vim-colors-solarized'
-"Plug 'maxbrunsfeld/vim-yankstack'
+Plug 'chriskempson/base16-vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'vim-scripts/YankRing.vim'
 Plug 'jiangmiao/auto-pairs'
@@ -49,21 +48,19 @@ set incsearch
 set ic " case insensitive search
 set mouse=
 set splitright
-"set clipboard=unnamed
+set clipboard=unnamed
 "set clipboard=unnamed,unnamedplus
 
 syntax enable
+set termguicolors
 set background=dark
-let g:solarized_visibility = "high"
-let g:solarized_contrast = "high"
-let g:solarized_termcolors=256
-colorscheme solarized
+"let g:solarized_visibility = "normal"
+"let g:solarized_contrast = "normal"
+"let g:solarized_termcolors=256
+colorscheme base16-default-dark
 
 let g:python2_host_prog = '/usr/local/bin/python'
 let g:python3_host_prog = '/usr/local/bin/python3'
 
 source $HOME/.config/nvim/binds.vim
 source $HOME/.config/nvim/plugins.vim
-
-autocmd FileType javascript nnoremap <buffer> <Leader>e :call EsBeautifier()<cr>
-autocmd FileType javascript vnoremap <buffer> <Leader>e :call RangeEsBeautifier()<cr>
