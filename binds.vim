@@ -7,8 +7,11 @@ inoremap <C-S> <C-O>:update<CR><ESC>
 nnoremap <SPACE> :noh<CR>
 inoremap <leader><leader> <ESC>
 
-noremap <C-j> 5j
-noremap <C-k> 5k
+inoremap <c-c> <ESC>
+vnoremap <c-c> <ESC>
+
+noremap <C-j> }
+noremap <C-k> {
 
 let mapleader = ","
 nmap <leader>q :q<CR>
@@ -21,5 +24,3 @@ vnoremap <C-y> "*y
 "paste from system clipbard
 noremap <leader>p "*p
 
-"go to next error
-nnoremap <leader>ne :ll<CR>
