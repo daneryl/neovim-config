@@ -47,3 +47,4 @@ endfunction
 nnoremap <leader>T :call TestOnlyChanges()<CR>
 
 vnoremap <leader>b :call RangeJsBeautify()<CR>
+noremap <leader>g :ImportJSGoto<CR>

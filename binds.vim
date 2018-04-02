@@ -12,8 +12,9 @@ vnoremap <c-c> <ESC>
 
 noremap <C-j> }
 noremap <C-k> {
+noremap Q !!$SHELL<CR>
 
-let mapleader = ","
+let g:mapleader = ','
 nmap <leader>q :q<CR>
 nmap <leader>f <S-v>f{%
 nmap <leader>b :bufdo %s#..#..#gec \| update

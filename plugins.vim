@@ -1,3 +1,4 @@
+scriptencoding utf-8
 "lightline
 let g:lightline = {
       \ 'colorscheme': 'one',
@@ -46,6 +47,7 @@ let g:neosnippet#disable_runtime_snippets = {
       \   '_' : 1,
       \ }
 let g:neosnippet#snippets_directory='~/.config/nvim/snippets/'
+"let g:neosnippet#enable_completed_snippet = 1
 
 function! s:neosnippet_complete()
   if pumvisible()
@@ -75,7 +77,6 @@ let s:denite_options = {
       \ 'default' : {
       \ 'winheight' : 12,
       \ 'mode' : 'insert',
-      \ 'quit' : 'true',
       \ 'highlight_matched_char' : 'MoreMsg',
       \ 'highlight_matched_range' : 'MoreMsg',
       \ 'direction': 'rightbelow',
@@ -129,7 +130,6 @@ nnoremap <C-f> :<C-u>Denite file_rec<CR>
 nnoremap <C-b> :<C-u>Denite buffer<CR>
 nnoremap <C-t> :<C-u>Denite file_rec -default-action=tabopen<CR>
 nnoremap <C-g> :<C-u>Denite grep -auto-highlight -mode=normal<CR>
-nnoremap <leader>g :<C-u>DeniteCursorWord file_rec -mode=normal<CR>
 nnoremap <leader>m :<C-u>Denite menu:config<CR>
 nnoremap <C-c> :<C-u>Denite menu:commands<CR>
 noremap <leader>s :<C-u>Denite file_rec -input=`expand('%:r')`.spec -mode=normal -default-action=tabopen -immediately<CR>
@@ -141,5 +141,3 @@ call denite#custom#map(
           \ 'noremap'
           \)
 
-"expand region
-map K <Plug>(expand_region_expand)
