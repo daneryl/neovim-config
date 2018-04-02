@@ -20,7 +20,7 @@ Plug 'tpope/vim-scriptease'
 Plug 'tpope/vim-repeat'
 
 Plug 'vimwiki/vimwiki'
-Plug 'metakirby5/codi.vim', { 'on': 'UndotreeToggle' }
+Plug 'metakirby5/codi.vim', { 'on': 'Codi' }
 
 Plug 'roxma/nvim-completion-manager'
 Plug 'fgrsnau/ncm-otherbuf'
