@@ -32,6 +32,12 @@ function! s:SetupDenite()
   call denite#custom#var('grep', 'separator', ['--'])
   call denite#custom#var('grep', 'final_opts', [])
 
+  let s:config_files = split(glob($HOME.'/.config/nvim/plugins/*'), '\n') + split(glob($HOME.'/.config/nvim/custom/*'), '\n')
+
+  function! MapConfigFileWithName(key, value)
+    return [fnamemodify(a:value, ':t'), a:value]
+  endfunction
+
   let s:menus = {}
   let s:menus.config = {
         \ 'description': 'configuration files'
@@ -39,10 +45,7 @@ function! s:SetupDenite()
   let s:menus.config.file_candidates = [
         \ ['zshrc', '~/.zshrc'],
         \ ['init.vim', '~/.config/nvim/init.vim'],
-        \ ['plugins.vim', '~/.config/nvim/plugins.vim'],
-        \ ['binds.vim', '~/.config/nvim/binds.vim'],
-        \ ['javascript.vim', '~/.config/nvim/ftplugin/javascript.vim']
-        \ ]
+        \ ] + map(s:config_files, function('MapConfigFileWithName'))
   let s:menus.commands = {
         \ 'description': 'useful commands'
         \ }
