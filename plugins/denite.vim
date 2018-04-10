@@ -12,9 +12,9 @@ function! s:SetupDenite()
         \ }}
 
   function! s:profile(opts) abort
-    for fname in keys(a:opts)
-      for dopt in keys(a:opts[fname])
-        call denite#custom#option(fname, dopt, a:opts[fname][dopt])
+    for l:fname in keys(a:opts)
+      for l:dopt in keys(a:opts[l:fname])
+        call denite#custom#option(l:fname, l:dopt, a:opts[l:fname][l:dopt])
       endfor
     endfor
   endfunction
@@ -45,6 +45,7 @@ function! s:SetupDenite()
   let s:menus.config.file_candidates = [
         \ ['zshrc', '~/.zshrc'],
         \ ['init.vim', '~/.config/nvim/init.vim'],
+        \ ['Edit snippets current filetype', 'NeoSnippetEdit']
         \ ] + map(s:config_files, function('MapConfigFileWithName'))
   let s:menus.commands = {
         \ 'description': 'useful commands'
