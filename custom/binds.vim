@@ -10,8 +10,8 @@ inoremap <leader><leader> <ESC>
 inoremap <c-c> <ESC>
 vnoremap <c-c> <ESC>
 
-noremap <C-j> }
-noremap <C-k> {
+nmap <C-j> }
+nmap <C-k> {
 noremap Q !!$SHELL<CR>
 
 let g:mapleader = ','
