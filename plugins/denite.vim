@@ -1,3 +1,5 @@
+scriptencoding utf8
+
 Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins', 'on': 'Denite' }
 
 function! s:SetupDenite()
@@ -56,6 +58,14 @@ function! s:SetupDenite()
         \ ['PlugClean', 'PlugClean'],
         \ ['Edit snippets current filetype', 'NeoSnippetEdit']
         \ ]
+
+  let s:menus.jscodemods = {
+        \ 'js-codemods': 'js codemods for quick refactoring'
+        \ }
+  let s:menus.jscodemods.command_candidates = [
+        \ ['function block to expression', 'PassRange'],
+        \ ]
+
   call denite#custom#var('menu', 'menus', s:menus)
 
 
@@ -67,12 +77,16 @@ function! s:SetupDenite()
         \)
 endfunction
 
-autocmd! User denite.nvim call s:SetupDenite()
+augroup denite
+  autocmd!
+  autocmd User denite.nvim call s:SetupDenite()
+augroup END
 
 nnoremap <C-f> :<C-u>Denite file_rec<CR>
 nnoremap <C-b> :<C-u>Denite buffer<CR>
 nnoremap <C-t> :<C-u>Denite file_rec -default-action=tabopen<CR>
 nnoremap <C-g> :<C-u>Denite grep -auto-highlight -mode=normal<CR>
 nnoremap <leader>m :<C-u>Denite menu:config<CR>
-nnoremap <C-c> :<C-u>Denite menu:commands<CR>
+nnoremap <leader><leader> :<C-u>Denite menu:commands<CR>
+vnoremap <leader>r :<C-u>Denite menu:jscodemods<CR>
 noremap <leader>s :<C-u>Denite file_rec -input=`expand('%:r')`.spec -mode=normal -default-action=tabopen -immediately<CR>
