@@ -14,9 +14,7 @@ set tabstop=2
 set shiftwidth=2
 set encoding=utf-8
 set noswapfile
-set backspace=indent,eol,start
 set hlsearch
-set incsearch
 set ignorecase
 set smartcase
 set mouse=

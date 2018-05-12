@@ -8,13 +8,13 @@ function! s:SourceDirectory(directory)
 endfunction
 
 call plug#begin('~/.local/share/nvim/plugged')
-
 Plug 'rakr/vim-one'
-Plug 'scrooloose/nerdcommenter'
 Plug 'jiangmiao/auto-pairs'
 
 Plug 'vim-scripts/Rename2'
 
+Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-scriptease'
 Plug 'tpope/vim-repeat'
