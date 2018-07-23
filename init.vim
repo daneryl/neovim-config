@@ -10,14 +10,16 @@ endfunction
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'rakr/vim-one'
 Plug 'jiangmiao/auto-pairs'
+Plug '~/workspace/test_vim_plugin'
 
-Plug 'vim-scripts/Rename2'
+" Plug 'vim-scripts/Rename2'
 
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-scriptease'
 Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-eunuch'
 
 Plug 'vimwiki/vimwiki'
 Plug 'metakirby5/codi.vim', { 'on': 'Codi' }

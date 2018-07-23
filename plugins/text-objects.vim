@@ -6,5 +6,6 @@ Plug 'inside/vim-textobj-jsxattr'
 Plug 'rhysd/vim-textobj-anyblock'
 Plug 'kana/vim-textobj-function'
 Plug 'haya14busa/vim-textobj-function-syntax'
+Plug 'vim-scripts/argtextobj.vim'
 
 Plug 'Chun-Yang/vim-textobj-chunk'
