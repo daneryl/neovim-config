@@ -1,4 +1,5 @@
 Plug 'w0rp/ale'
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 
 let g:ale_change_sign_column_color = 1
 let g:ale_sign_error = '=>'
